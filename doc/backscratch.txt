@@ -1,0 +1,25 @@
+*backscratch.txt* Open scratch buffer
+
+Commands:
+				*:Scratchify*
+:Scratchify
+		Change current buffer into scratch buffer. For more
+		information check |scratch-buffer|.
+
+				*:Scratch*
+:Scratch
+:Scratch {cmd}
+		Open new scratch buffer. If {cmd} is specified it run provided
+		Vim command and load output into |scratch-buffer|.
+
+				*:Scratch@*
+:Scratch @{reg}
+		Load content of {reg} into new |scratch-buffer|.
+
+				*:Scratch!*
+:Scratch !{cmd}
+		Execute {cmd} and insert its standard output into
+		|scratch-buffer|. It uses |systemlist()| to read output of
+		command.
+
+vim:tw=78:ts=8:noet:ft=help:norl:
